@@ -2,7 +2,7 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import { name } from './package.json'
 import babel from '@rollup/plugin-babel'
-import plugins from './example/src/plugin/common-plugins'
+import vue from '@vitejs/plugin-vue'
 
 const camelize = (name: string) =>
   name.replace(/(^|-)(\w)/g, (a, b, c) => c.toUpperCase())
@@ -40,5 +40,9 @@ export default defineConfig({
       external: ['vue', 'vue-router'],
     },
   },
-  plugins,
+  plugins: [
+    vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
+  ]
 })
