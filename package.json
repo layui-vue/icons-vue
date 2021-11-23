@@ -18,7 +18,7 @@
     "dev": "vite",
     "build": "vite build --emptyOutDir && npm run build:types",
     "build:types": "rimraf types && tsc -d",
-    "build:docs": "vite build docs"
+    "generate": "node ./scripts/generate.ts"
   },
   "keywords": [
     "layui-vue",
@@ -32,6 +32,7 @@
     "vue-router": "^4.0.12"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "vue": "^3.2.22",
     "vue-router": "^4.0.12"
   },
@@ -40,9 +41,9 @@
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
     "@rollup/plugin-babel": "^5.3.0",
-    "@types/node": "^16.11.9",
     "@types/markdown-it": "^12.2.3",
     "@types/markdown-it-container": "^2.0.4",
+    "@types/node": "^16.11.9",
     "@vitejs/plugin-vue": "^1.9.3",
     "@vue/compiler-sfc": "^3.2.22",
     "@vue/server-renderer": "^3.2.20",

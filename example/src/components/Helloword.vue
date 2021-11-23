@@ -1,13 +1,15 @@
 <template>
   <Logout></Logout>
+  <NotFound></NotFound>
 </template>
 
 <script>
-import { Logout } from "../../../src/index";
+import { Logout, NotFound } from "../../../src/index";
 
 export default {
   components: {
     Logout,
+    NotFound
   },
 };
 </script>
