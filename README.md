@@ -1,4 +1,4 @@
-### icons for layui-vue
+### ⭐ The abstract trees of the layui iconfont icons.
 
 icons - vue 是一套提取至 layui vue 的高质量 iconfont 库，你可以自由的在其他 vue 项目中独立使用。
 
