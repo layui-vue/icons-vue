@@ -1,6 +1,6 @@
-# Icons vue 1.0.0
+# ⭐ Icons vue 1.0.0
 
-### ⭐ The abstract trees of the layui iconfont icons.
+### The abstract trees of the layui iconfont icons.
 
 
 ![输入图片说明](image.png)
