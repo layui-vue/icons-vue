@@ -36,7 +36,7 @@ export default [
   { name: '微博', class: 'layui-icon-login-weibo' },
   { name: '密码', class: 'layui-icon-password' },
   { name: '用户名', class: 'layui-icon-username' },
-  { name: '刷新-粗', class: 'layui-icon-refresh-3' },
+  { name: '刷新-粗', class: 'layui-icon-refresh-three' },
   { name: '授权', class: 'layui-icon-auz' },
   { name: '左向右伸缩菜单', class: 'layui-icon-spread-left' },
   { name: '右向左伸缩菜单', class: 'layui-icon-shrink-right' },
