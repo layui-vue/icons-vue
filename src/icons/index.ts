@@ -35,7 +35,7 @@ export { default as LoginQqIcon } from './LoginQqIcon.vue';
 export { default as LoginWeiboIcon } from './LoginWeiboIcon.vue';
 export { default as PasswordIcon } from './PasswordIcon.vue';
 export { default as UsernameIcon } from './UsernameIcon.vue';
-export { default as Refresh3Icon } from './Refresh3Icon.vue';
+export { default as RefreshThreeIcon } from './RefreshThreeIcon.vue';
 export { default as AuzIcon } from './AuzIcon.vue';
 export { default as SpreadLeftIcon } from './SpreadLeftIcon.vue';
 export { default as ShrinkRightIcon } from './ShrinkRightIcon.vue';

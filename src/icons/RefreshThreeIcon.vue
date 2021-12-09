@@ -1,6 +1,6 @@
 <script lang="ts">
 export default {
-  name: "Refresh3Icon",
+  name: "RefreshThreeIcon",
 };
 </script>
 <script setup lang="ts">
@@ -16,6 +16,6 @@ const props = defineProps<{
   <lay-icon
     :color="props.color"
     :size="props.size"
-    type="layui-icon-refresh-3"
+    type="layui-icon-refresh-three"
   />
 </template>
