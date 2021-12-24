@@ -1,15 +1,15 @@
 <template>
-  <Logout></Logout>
-  <NotFound></NotFound>
+  <LogoutIcon></LogoutIcon>
+  <NotFoundIcon></NotFoundIcon>
 </template>
 
 <script>
-import { Logout, NotFound } from "../../../src/index";
+import { LogoutIcon, NotFoundIcon } from "../../../src/index";
 
 export default {
   components: {
-    Logout,
-    NotFound
+    LogoutIcon,
+    NotFoundIcon
   },
 };
 </script>

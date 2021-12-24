@@ -1,21 +1,16 @@
 const iconfonts = require("./iconfont.ts")
-
-const chalk = require('chalk')
 const path = require('path')
 const fs = require('fs')
 
 const allTemplate = require('./template.ts')
 
 const resolve = (...file) => path.resolve(process.cwd() + '/src/icons/', ...file)
-const log = message => console.log(chalk.green(`${message}`))
-const successLog = message => console.log(chalk.blue(`${message}`))
-const errorLog = error => console.log(chalk.red(`${error}`))
 
 function generateFile(path, data) {
   return new Promise((resolve, reject) => {
     fs.writeFile(path, data, 'utf8', err => {
       if (err) {
-        errorLog(err.message)
+        console.log(err.message)
         reject(err)
       } else {
         resolve(true)
