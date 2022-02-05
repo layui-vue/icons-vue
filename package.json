@@ -1,6 +1,6 @@
 {
   "name": "@layui/icons-vue",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a component library for Vue 3 base on layui-vue",
   "homepage": "https://gitee.com/layui-vue/icons-vue/blob/master/README.md",
   "module": "lib/icons-vue.es.js",
