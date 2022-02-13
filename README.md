@@ -1,70 +1,37 @@
-# ⭐ Icons vue 1.0.1
+## Icons vue 1.0.4
 
-### The abstract trees of the layui iconfont icons.
+<p>  
+  <a href="https://www.npmjs.com/package/@layui/icons-vue"><img src="https://img.shields.io/npm/v/@layui/icons-vue.svg?sanitize=true" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@layui/icon-vue"><img src="https://img.shields.io/npm/l/@layui/icons-vue.svg?sanitize=true" alt="License"></a>
+  <a href="https://travis-ci.org/sentsin/layui"><img alt="Build Status" src="https://img.shields.io/travis/sentsin/layui/master.svg"></a>
+  <a href="https://coveralls.io/r/sentsin/layui?branch=master"><img alt="Test Coverage" src="https://img.shields.io/coveralls/sentsin/layui/master.svg"></a>
+</p>  
 
+**[🔶 Explore the docs »](http://layui-vue.pearadmin.com)**
 
-![输入图片说明](image.png)
+The abstract trees of the layui iconfont icons.
 
+## Get Started
 
-icons - vue 是一套提取至 layui vue 的高质量 iconfont 库，你可以自由的在其他 vue 项目中独立使用。
+Use npm to install.
 
-
-## Get started
-
-在 icons - vue 发布之前，layui vue 内置 icon 组件，你可以像以下方式去使用它
-
-
-```
-<lay-icon type="layui-icon-bluetooth"></lay-icon>
-```
-
-现在 icons - vue 作为一个独立库，你需要使用 npm 或 yarn 安装
-
-npm:
-
-```
-npm install @layui/icons-vue
+```bash
+npm i @layui/icons-vue
 ```
 
-yarn:
-
-```
-yarn add @layui/icons-vue
-```
-
-
-全局引入 icons - vue 所需的 iconfont 样式文件
-
-```
-import '@layui/icons-vue/lib/index.css'
-```
-
-现在你可以使用 icons-vue 了，我们在 icons - vue 中提供了 组件化，动态，自定义 三种使用方式。
-
-
-1. 组件化，将 iconfont 的 class 作为组件名称，直接使用
+Componentization, using the class of iconfont as the component name.
 
 ```
 <template>
-    <!-- 组件图标 -->
     <AlignCenterIcon></AlignCenterIcon>
     <DiamondIcon></DiamondIcon>
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 import { AlignCenterIcon, DiamondIcon } from '@layui/icons-vue';
-import { defineComponent, ref } from "vue";
-
-export default defineComponent({
-  components: {
-    AlignCenterIcon,
-    DiamondIcon,
-    NotFoundIcon
-  }
-});
 </script>
 ```
 
-2. 依托于 lay-icon 组件，通过 type 传递 class 的方式渲染组件
+Traditionally, components are rendered by passing class through type.
 
 ```
 <template>
@@ -72,40 +39,34 @@ export default defineComponent({
   <LayIcon type="layui-icon-not-found"></LayIcon>
   <LayIcon type="layui-icon-diamond"></LayIcon>
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 import { LayIcon } from '@layui/icons-vue';
-import { defineComponent, ref } from "vue";
-
-export default defineComponent({
-  components: {
-    LayIcon
-  }
-});
 </script>
 ```
 
-3. 我们允许用户接触 lay-icon 来使用自己引入的 iconfont 字体图标
+## Open Source Licence
+
+layui vue is licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ```
-<template>
-   <!-- 自定义图标 -->
-   <LayIcon prefix="iconfont" type="sample"></LayIcon>
-</template>
-<script lang="ts">
-import './iconfont.css';
-import { LayIcon } from '@layui/icons-vue';
-import { defineComponent, ref } from "vue";
+The MIT License (MIT)
 
-export default defineComponent({
-  components: {
-    LayIcon
-  },
-  setup() {
-    return {
-    };
-  },
-});
-</script>
+Copyright 2021 就眠儀式
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
-
-在 layui - vue 的后续迭代中，我们仍支持内置 lay-icon 组件，但 组件化的 icon 使用方式，需要自行引入 icons vue 库
