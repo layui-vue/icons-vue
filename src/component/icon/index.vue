@@ -5,13 +5,13 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { computed, defineProps } from "vue";
+import { computed } from "vue";
 
 export interface LayIconProps {
-  prefix?: string;
-  color?: string;
   size?: string;
   type?: string;
+  color?: string;
+  prefix?: string;
 }
 
 const props = withDefaults(defineProps<LayIconProps>(), {
@@ -22,6 +22,13 @@ const styles = computed(() => {
   return {
     color: props.color,
     fontSize: props.size,
+  };
+});
+
+const classes = computed(() => {
+  return {
+    type: props.type,
+    prefix: props.prefix,
   };
 });
 </script>

@@ -4,8 +4,7 @@ export default {
 };
 </script>
 <script setup lang="ts">
-import { defineProps } from "vue";
-import LayIcon from "../components/icon/index";
+import LayIcon from "../component/icon/index";
       
 const props = defineProps<{
   color?: string;

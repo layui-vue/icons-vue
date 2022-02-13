@@ -6,8 +6,7 @@ export default {
 };
 </script>
 <script setup lang="ts">
-import { defineProps } from "vue";
-import LayIcon from "../components/icon/index";
+import LayIcon from "../component/icon/index";
       
 const props = defineProps<{
   color?: string;
@@ -20,13 +19,13 @@ const props = defineProps<{
     :size="props.size"
     type="${data.class}"
   />
-</template>`
+</template>`;
   },
   Index: (names) => {
     let result = ``;
     names.forEach((name) => {
-      result += `export { default as ${name} } from './${name}.vue';` + '\r\n'
-    })
+      result += `export { default as ${name} } from './${name}.vue';` + "\r\n";
+    });
     return result;
-  }
-}
+  },
+};

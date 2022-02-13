@@ -21,14 +21,14 @@
     "generate": "node ./scripts/generate.ts"
   },
   "keywords": [
-    "layui-vue",
+    "layui-icon",
     "icons-vue",
     "vue"
   ],
   "author": "就眠儀式",
   "license": "MIT",
   "dependencies": {
-    "vue": "^3.2.29"
+    "vue": "^3.2.30"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -39,8 +39,8 @@
     "@types/markdown-it-container": "^2.0.4",
     "@types/node": "^16.11.9",
     "@vitejs/plugin-vue": "^1.9.3",
-    "@vue/compiler-sfc": "^3.2.29",
-    "@vue/server-renderer": "^3.2.29",
+    "@vue/compiler-sfc": "^3.2.30",
+    "@vue/server-renderer": "^3.2.30",
     "escape-html": "^1.0.3",
     "less": "^4.1.2",
     "markdown-it-container": "^3.0.0",
