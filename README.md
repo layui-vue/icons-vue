@@ -1,4 +1,4 @@
-## Icons vue 1.0.4
+## Introduction
 
 <p>  
   <a href="https://www.npmjs.com/package/@layui/icons-vue"><img src="https://img.shields.io/npm/v/@layui/icons-vue.svg?sanitize=true" alt="Version"></a>
