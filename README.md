@@ -31,6 +31,7 @@ Componentization, using the class of iconfont as the component name.
     <AlignCenterIcon></AlignCenterIcon>
     <DiamondIcon></DiamondIcon>
 </template>
+
 <script lang="ts" setup>
 import { AlignCenterIcon, DiamondIcon } from '@layui/icons-vue';
 </script>
@@ -44,6 +45,7 @@ Traditionally, components are rendered by passing class through type.
   <LayIcon type="layui-icon-not-found"></LayIcon>
   <LayIcon type="layui-icon-diamond"></LayIcon>
 </template>
+
 <script lang="ts" setup>
 import { LayIcon } from '@layui/icons-vue';
 </script>
