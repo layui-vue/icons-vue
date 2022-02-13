@@ -18,6 +18,15 @@ Use npm to install.
 ```bash
 npm i @layui/icons-vue
 ```
+Font icon files need to be introduced before use
+
+```
+import "@layui/icons-vue/lib/index.css"
+```
+
+```bash
+npm i @layui/icons-vue
+```
 
 Componentization, using the class of iconfont as the component name.
 
